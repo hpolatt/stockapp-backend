@@ -1,5 +1,8 @@
 package com.hpolat.stockapp.model;
 
+import javax.persistence.MappedSuperclass;
+
+@MappedSuperclass
 public class DefineModel extends BaseModel {
     private String name;
     private String description;
