@@ -1,5 +1,4 @@
 package com.hpolat.stockapp.config;
-import com.hpolat.stockapp.service.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

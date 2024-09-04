@@ -5,12 +5,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Table(name = "entry_exit_forms")
-public class EntryExitForm {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    
+public class EntryExitForm  extends BaseModel{
     private String type;
     private Timestamp date;
     private Integer quantity;
@@ -24,14 +19,6 @@ public class EntryExitForm {
     private Store store;
 
     // getters and setters
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public String getType() {
         return type;
     }

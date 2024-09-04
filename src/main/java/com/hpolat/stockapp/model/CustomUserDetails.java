@@ -7,7 +7,7 @@ import java.util.Collection;
 
 public class CustomUserDetails implements UserDetails {
 
-    private User user;
+    final private User user;
 
     public CustomUserDetails(User user) {
         this.user = user;
@@ -15,7 +15,6 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        // Rol bilgilerini buradan döndürebilirsiniz.
         return null;
     }
 

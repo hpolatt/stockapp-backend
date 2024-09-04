@@ -1,4 +1,4 @@
-package com.hpolat.stockapp.service;
+package com.hpolat.stockapp.config;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

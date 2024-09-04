@@ -1,7 +1,7 @@
 package com.hpolat.stockapp.controller;
 
 import com.hpolat.stockapp.model.AuthenticationRequest;
-import com.hpolat.stockapp.service.JwtUtil;
+import com.hpolat.stockapp.config.JwtUtil;
 import com.hpolat.stockapp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;

@@ -7,4 +7,3 @@ import com.hpolat.stockapp.model.Store;
 @Repository
 public interface StoreRepository extends JpaRepository<Store, Long> {
 }
-
