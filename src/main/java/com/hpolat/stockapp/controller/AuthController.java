@@ -10,6 +10,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/api/login")
 public class AuthController {
 
     @Autowired
@@ -21,7 +22,7 @@ public class AuthController {
     @Autowired
     private UserService userDetailsService;
 
-    @PostMapping("/login")
+    @PostMapping
     public String createAuthenticationToken(@RequestBody AuthenticationRequest authRequest) throws Exception {
         try {
             authenticationManager.authenticate(
