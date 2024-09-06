@@ -13,13 +13,23 @@ public class BrandController {
     @Autowired
     private BrandService brandService;
 
-    @GetMapping("/brands")
+    @GetMapping
     public List<Brand> getAllBrands() {
         return brandService.getAllBrands();
     }
 
-    @PostMapping("/brands")
+    @PostMapping
     public Brand createBrand(@RequestBody Brand brand) {
         return brandService.createBrand(brand);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteBrand(@PathVariable Long id) {
+        brandService.deleteBrand(id);
+    }
+
+    @PutMapping("/{id}")
+    public Brand updateBrand(@PathVariable Long id, @RequestBody Brand brand) {
+        return brandService.updateBrand(id, brand);
     }
 }
